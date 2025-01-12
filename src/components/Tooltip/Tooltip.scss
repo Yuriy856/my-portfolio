@@ -1,0 +1,37 @@
+.tooltip-container {
+  position: relative;
+  .tooltip {
+    position: absolute;
+    left: 50%;
+    top: -24px;
+    z-index: 10;
+
+    transform: translateX(-50%) scale(0.8);
+    width: fit-content;
+
+    // Заборонити перенесення слів на новий рядок
+    white-space: nowrap;
+
+    padding: 6px 8px;
+    background-color: #484752;
+    border-radius: 3px;
+    border: 2px solid #ffffff08;
+
+    display: grid;
+    place-content: center;
+    transition: 0.2s ease-out;
+    opacity: 0;
+    visibility: hidden;
+
+    // Заборонити наведення користувачем на сам tooltip
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+
+    &.open {
+      top: -45px;
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+      visibility: visible;
+    }
+  }
+}
