@@ -89,4 +89,18 @@ export const contentSkills = [
       </>
     ),
   },
+  {
+    id: "typescript",
+    text: (
+      <>
+        <span className="content-title">TypeScript (TS)</span>{" "}
+        <span className="content-desc">
+          is an open-source high-level programming language developed by
+          Microsoft that adds static typing with optional type annotations to
+          JavaScript. It is designed for the development of large applications
+          and transpiles to JavaScript.
+        </span>
+      </>
+    ),
+  },
 ];

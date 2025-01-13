@@ -8,6 +8,7 @@ import ReactIcon from "/src/assets/icons/react.svg?react";
 import FigmaIcon from "/src/assets/icons/figma.svg?react";
 import SassIcon from "/src/assets/icons/sass.svg?react";
 import GitIcon from "/src/assets/icons/git.svg?react";
+import TypeScriptIcon from "/src/assets/icons/typescript.svg?react";
 // SVG Atribute
 // fill="current" stroke="none"
 // ===========================================================================
@@ -53,6 +54,11 @@ export default function Portfolio() {
         <Tooltip text={"Git"} id={"git"}>
           <li className="skill-item">
             <GitIcon className="skill-icon" />
+          </li>
+        </Tooltip>
+        <Tooltip text={"TypeScript"} id={"typescript"}>
+          <li className="skill-item">
+            <TypeScriptIcon className="skill-icon" />
           </li>
         </Tooltip>
       </ul>
